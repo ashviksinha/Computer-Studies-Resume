@@ -32,7 +32,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(76, 139, 245, 0.1), transparent 70%);
+    background: radial-gradient(circle, rgba(76, 139, 245, 0.1) 0%, transparent 70%);
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -82,12 +82,10 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Full-width sections */
 .full-width {
     width: 100%;
 }
 
-/* Half-width sections */
 .half-width {
     width: 48%;
     display: inline-block;
@@ -161,6 +159,7 @@ p:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box; /* Added */
 }
 
 .education .half-width:hover {
@@ -200,8 +199,7 @@ ul li {
     position: relative;
     font-size: 15px;
     color: #a1a1a1;
-    padding-left: 25px;
-    padding: 4px 8px;
+    padding: 4px 8px 4px 25px; /* Consolidated padding */
     border-radius: 4px;
     transition: color 0.3s ease, transform 0.3s ease, background 0.3s ease;
 }
@@ -218,13 +216,14 @@ ul li::before {
     position: absolute;
     left: 8px;
     font-size: 16px;
-    top: 6px;
+    top: 50%; /* Centered vertically */
+    transform: translateY(-50%); /* Centered vertically */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 ul li:hover::before {
     color: #8ab6f9;
-    transform: scale(1.2);
+    transform: translateY(-50%) scale(1.2); /* Adjusted for centering */
 }
 
 /* Contact Section */
@@ -305,6 +304,7 @@ ul li:hover::before {
         width: 100%;
         background: #ffffff;
         color: #000000;
+        border: none; /* Added */
     }
 
     .section {
@@ -322,10 +322,15 @@ ul li:hover::before {
     .education .half-width {
         box-shadow: none;
         background: none;
+        border: none; /* Added */
     }
 
     p:hover, ul li:hover, .contact p:hover {
         background: none;
         transform: none;
+    }
+
+    .container::before, .header::after, h2::after, ul li::before {
+        display: none; /* Remove pseudo-elements for print */
     }
 }
