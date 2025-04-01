@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 20px;
     line-height: 1.6;
+    user-select: none; /* Disable text selection globally */
 }
 
 /* Resume Container */
