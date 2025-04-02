@@ -1,0 +1,10 @@
+:root {
+    --primary: #4c8bf5;
+    --primary-light: #8ab6f9;
+    --background: #1a1a1a;
+    --card-bg: #2d2d2d;
+    --text: #d4d4d4;
+    --text-muted: #b3b3b3;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --transition: all 0.3s ease;
+}
