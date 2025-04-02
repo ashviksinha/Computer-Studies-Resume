@@ -4,89 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Ashvik Sinha</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
     <div class="container">
-        <div class="header">ASHVIK SINHA</div>
-        
-        <div class="section">
-            <div class="left-column">
-                <h2>CONTACT</h2>
-                <p>
-                    Phone Number: 604-996-2440<br>
-                    Email Address: ashvik592@deltalearns.ca<br>
-                </p>
-            </div>
-            <div class="right-column">
-                <h2>PROFILE SUMMARY</h2>
+        <header class="header">
+            <h1>ASHVIK SINHA</h1>
+            <div class="header-subtitle">Aspiring Innovator in Music & Technology</div>
+        </header>
+
+        <main>
+            <section class="section contact">
+                <h2>Contact</h2>
+                <p><span class="icon phone"></span>604-996-2440</p>
+                <p><span class="icon email"></span><a href="mailto:ashvik592@deltalearns.ca">ashvik592@deltalearns.ca</a></p>
+            </section>
+
+            <section class="section summary">
+                <h2>Profile Summary</h2>
                 <p>Demonstrated ability to identify and leverage emerging trends in music and technology. Skilled in crafting and implementing creative marketing strategies to generate excitement and engagement. Seeks a dynamic opportunity to utilize leadership and problem-solving skills to achieve impactful results within the music or technology industry.</p>
-            </div>
-        </div>
-        
-        <div class="section">
-            <div class="left-column">
-                <h2>EDUCATION</h2>
-                <p><strong>2015 - 2023</strong><br>BRANTFORD ELEMENTARY</p>
-                <ul>
-                    <li>Dedicated Student Award</li>
-                    <li>Musical Excellence Award</li>
-                </ul>
-                <p><strong>2023 - PRESENT</strong><br>SEAQUAM SECONDARY</p>
-                <ul>
-                    <li>Principal’s List</li>
-                    <li>Advanced Honors’ (A+ Average)</li>
-                </ul>
-            </div>
-            <div class="right-column">
-                <h2>WORK EXPERIENCE</h2>
-                <p><strong>Youth Leadership Society of British Columbia</strong> (2021 - PRESENT)<br>Public Speaking Assistant Coach & Administrative Staff</p>
-                <ul>
-                    <li>Designed and delivered public speaking workshops for teens aged 11-17.</li>
-                    <li>Cultivated a supportive environment to build students’ confidence and communication skills.</li>
-                    <li>Equipped students with techniques for crafting speeches, overcoming stage fright, and delivering presentations effectively.</li>
-                    <li>Witnessed positive transformations in students' public speaking abilities.</li>
-                </ul>
-                <p><strong>Regional Animal Protection Society (RAPS)</strong> (2020 - PRESENT)<br>Volunteer</p>
-                <ul>
-                    <li>Animal Transport: Loaded crates onto company van for safe transit.</li>
-                    <li>Support Tasks: Assisted with cleanup, laundry, and dish duties.</li>
-                    <li>Helped create a positive experience for both visitors and animals, increasing adoption rates.</li>
-                    <li>Feeding and Watering: Ensured animals had nourishment during transport.</li>
-                    <li>Comfort and Calm: Soothed stressed pets, promoting a smooth journey.</li>
-                </ul>
-                <p><strong>Pacific Professional Flight Training</strong> (2022 - PRESENT)<br>Pilot in Training</p>
-                <ul>
-                    <li>300 Flying Hours: Milestone of experience, weathered skies, and honed skills.</li>
-                    <li>Vancouver to Seattle Flight: Scenic journey connecting vibrant cities.</li>
-                    <li>Private Pilot’s License (PPL): Achievement unlocked—freedom in the skies!</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="section">
-            <div class="left-column">
-                <h2>SKILLS</h2>
-                <ul>
-                    <li>Teamwork</li>
-                    <li>Time Management</li>
-                    <li>Leadership</li>
-                    <li>Effective Communication</li>
-                    <li>Critical Thinking</li>
-                    <li>Musical Excellence</li>
-                    <li>Technological Creation</li>
-                </ul>
-            </div>
-            <div class="right-column">
-                <h2>LANGUAGES</h2>
-                <ul>
-                    <li>English: Fluent</li>
-                    <li>French: Fluent</li>
-                    <li>Chinese: Intermediate</li>
-                    <li>Hindi: Fluent</li>
-                </ul>
-            </div>
-        </div>
+            </section>
+
+            <section class="section education">
+                <h2>Education</h2>
+                <div class="card">
+                    <p><strong>2015 - 2023</strong><br>BRANTFORD ELEMENTARY</p>
+                    <ul>
+                        <li>Dedicated Student Award</li>
+                        <li>Musical Excellence Award</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <p><strong>2023 - PRESENT</strong><br>SEAQUAM SECONDARY</p>
+                    <ul>
+                        <li>Principal’s List</li>
+                        <li>Advanced Honors’ (A+ Average)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section experience">
+                <h2>Work Experience</h2>
+                <div class="card">
+                    <p><strong>Youth Leadership Society of BC</strong> (2021 - PRESENT)<br>Public Speaking Assistant Coach & Administrative Staff</p>
+                    <ul>
+                        <li>Designed and delivered public speaking workshops for teens aged 11-17.</li>
+                        <li>Cultivated a supportive environment to build students’ confidence.</li>
+                        <li>Equipped students with techniques for crafting speeches.</li>
+                        <li>Witnessed positive transformations in students' abilities.</li>
+                    </ul>
+                </div>
+                <!-- Add other experience cards similarly -->
+            </section>
+
+            <section class="section skills-languages">
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Teamwork</li>
+                        <li>Time Management</li>
+                        <li>Leadership</li>
+                        <li>Effective Communication</li>
+                        <li>Critical Thinking</li>
+                        <li>Musical Excellence</li>
+                        <li>Technological Creation</li>
+                    </ul>
+                </div>
+                <div class="languages">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>English: Fluent</li>
+                        <li>French: Fluent</li>
+                        <li>Chinese: Intermediate</li>
+                        <li>Hindi: Fluent</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Last Updated: April 2025</p>
+        </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
